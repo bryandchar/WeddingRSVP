@@ -1,0 +1,224 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: #FCFFEE;
+  width: 90%;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin: 2em auto;
+  justify-content: space-between;
+}
+
+.menu__logo {
+  width: 10%;
+  height: 100px;
+  background-image: url(../images/brychar-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left 0 center;
+}
+
+.nav, .nav__items, ul, li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 0.4;
+  list-style: none;
+}
+
+#landing {
+  display: flex;
+  flex-wrap: wrap;
+  flex: row;
+  justify-content: space-between;
+  margin: 2em 0 2em 0;
+}
+#landing .landing__text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  white-space: nowrap;
+  justify-content: end;
+}
+#landing .landing__text .landing__text--loc {
+  display: flex;
+  flex-direction: row;
+}
+#landing .landing__text .landing__text--loc .landing__text--pin {
+  width: 5%;
+  height: auto;
+  background-image: url(../images/pin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left 0 center;
+  margin-right: 1em;
+}
+#landing .landing__text .landing__text--wordmark {
+  width: 110%;
+  min-height: 400px;
+  background-image: url(../images/brychar-wordmark.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
+  margin-left: -5%;
+}
+#landing .landing__imgcontainer {
+  width: 60%;
+  height: 80%;
+  min-height: 750px;
+  display: flex;
+  position: relative;
+}
+#landing .landing__imgcontainer .landing__img {
+  border: 3px solid black;
+  border-radius: 45px;
+  min-width: 100%;
+  height: 80%;
+  min-height: 750px;
+  background: url(../images/brychar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60%;
+  flex: 1;
+  background-color: #444;
+}
+#landing .landing__imgcontainer .rsvp__btn {
+  background-image: url(../images/rsvp-btn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 26%;
+  min-width: 350px;
+  position: absolute;
+  bottom: -30px;
+  right: -50px;
+  rotate: -15deg;
+}
+
+/** ANIMATION STUFF **/
+.rsvp__btn {
+  -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake-lr {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  10% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  90% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+}
+@keyframes shake-lr {
+  0%, 100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  10% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  90% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+}
+/** TYPE STUFF **/
+body, .article {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: auto;
+}
+
+h1, .h1 {
+  font-size: 5.5vw;
+  line-height: 100%;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+h2, .h2 {
+  font-weight: 100;
+  font-size: 2.8vw;
+  line-height: 100%;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*# sourceMappingURL=style.css.map */
