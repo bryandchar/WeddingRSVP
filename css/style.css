@@ -39,7 +39,7 @@ body {
   flex-wrap: wrap;
   flex: row;
   justify-content: space-between;
-  margin: 150px 0 150px 0;
+  margin-bottom: 150px;
 }
 #landing .landing__text {
   display: flex;
@@ -87,7 +87,7 @@ body {
   background: url(../images/brychar.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 60%;
+  background-position: center 40%;
   flex: 1;
   background-color: #444;
 }
@@ -112,6 +112,10 @@ body {
   align-items: center;
   /** DIRECTIONS **/
   /** SCHEDULE **/
+}
+.two-block .story__text {
+  width: 48%;
+  text-align: left;
 }
 .two-block .story__imgcontainer {
   width: 48%;
@@ -145,10 +149,6 @@ body {
   rotate: -15deg;
   -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-.two-block .story__text {
-  width: 48%;
-  text-align: left;
 }
 .two-block .iframe-container {
   position: relative;
@@ -190,29 +190,6 @@ body {
   animation: bounce-in-fwd 1.1s both;
 }
 #schedule .schedule__text {
-  width: 48%;
-}
-
-#story {
-  display: flex;
-  flex-direction: row;
-  margin: 50px 0 250px 0;
-  justify-content: space-between;
-  align-items: center;
-}
-#story .story__img {
-  width: 48%;
-  min-height: 600px;
-  background-image: url(../images/brychar2.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 15%;
-  background-size: cover;
-  border: 3px solid black;
-  border-radius: 45px;
-  -webkit-animation: bounce-in-fwd 1.1s both;
-  animation: bounce-in-fwd 1.1s both;
-}
-#story .story__text {
   width: 48%;
 }
 
