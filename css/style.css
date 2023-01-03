@@ -33,6 +33,14 @@ body {
   flex-grow: 0.4;
   list-style: none;
 }
+.nav a:link, .nav a:visited, .nav a:active, .nav__items a:link, .nav__items a:visited, .nav__items a:active, ul a:link, ul a:visited, ul a:active, li a:link, li a:visited, li a:active {
+  text-decoration: none;
+  color: black;
+}
+.nav a:hover, .nav__items a:hover, ul a:hover, li a:hover {
+  -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
 
 #landing {
   display: flex;
@@ -62,14 +70,10 @@ body {
   margin-right: 1em;
 }
 #landing .landing__text .landing__text--wordmark {
-  width: 110%;
-  min-height: 40vh;
-  background-image: url(../images/brychar-wordmark.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  width: 45vw;
+  object-fit: contain;
   z-index: 1;
-  margin-left: -5%;
+  margin-left: -2%;
 }
 #landing .landing__imgcontainer {
   width: 60%;
@@ -110,7 +114,6 @@ body {
   margin: 150px 0 150px 0;
   justify-content: space-between;
   align-items: center;
-  /** DIRECTIONS **/
   /** SCHEDULE **/
 }
 .two-block .story__text {
@@ -150,19 +153,6 @@ body {
   -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
-.two-block .iframe-container {
-  position: relative;
-  overflow: hidden;
-  width: 48%;
-  min-height: 500px;
-}
-.two-block .iframe-container iframe {
-  position: absolute;
-  top: 0;
-  border: 0;
-  height: 100%;
-  width: 100%;
-}
 .two-block .schedule__img {
   width: 48%;
   min-height: 500px;
@@ -176,7 +166,7 @@ body {
 #schedule {
   display: flex;
   flex-direction: row;
-  margin: 50px 0 250px 0;
+  margin: 150px 0 150px 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -193,28 +183,29 @@ body {
   width: 48%;
 }
 
-#directions {
+.directions {
   display: flex;
-  flex-direction: row;
-  margin: 50px 0 250px 0;
+  flex-direction: column;
+  margin: 150px 0 150px 0;
   justify-content: space-between;
   align-items: center;
 }
-#directions .iframe-container {
+.directions .iframe-container {
   position: relative;
   overflow: hidden;
-  width: 48%;
-  min-height: 500px;
+  width: 100%;
+  min-height: 700px;
+  margin-bottom: 150px;
 }
-#directions .iframe-container iframe {
+.directions .iframe-container iframe {
   position: absolute;
   top: 0;
   border: 0;
   height: 100%;
   width: 100%;
 }
-#directions .directions__text {
-  width: 48%;
+.directions .directions__text {
+  width: 100%;
 }
 
 /** ANIMATION STUFF **/
@@ -540,10 +531,6 @@ hr, .hr {
   margin: -1px 0;
 }
 
-a, b, i, strong, em, small, code {
-  line-height: 0;
-}
-
 sub, sup {
   line-height: 0;
   position: relative;
@@ -567,11 +554,15 @@ sub {
   #landing, .two-block {
     flex-direction: column !important;
     align-items: center;
+    margin-top: 150px;
   }
   #landing .landing__text, .two-block .landing__text {
     width: 90%;
   }
-  #landing .landing__imgcontainer, #landing .story__text, #landing .story__imgcontainer, .two-block .landing__imgcontainer, .two-block .story__text, .two-block .story__imgcontainer {
+  #landing .landing__text--wordmark, .two-block .landing__text--wordmark {
+    min-width: 100% !important;
+  }
+  #landing .landing__imgcontainer, #landing .story__text, #landing .story__imgcontainer, #landing .schedule__img, .two-block .landing__imgcontainer, .two-block .story__text, .two-block .story__imgcontainer, .two-block .schedule__img {
     width: 90%;
     margin: 3em 0 3em 0;
   }
