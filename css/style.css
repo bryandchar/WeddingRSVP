@@ -526,7 +526,7 @@ sub {
   #landing, .two-block {
     flex-direction: column !important;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 50px;
   }
   #landing .landing__text, .two-block .landing__text {
     width: 90%;
@@ -536,16 +536,18 @@ sub {
   }
   #landing .landing__imgcontainer, #landing .story__text, #landing .story__imgcontainer, #landing .schedule__img, .two-block .landing__imgcontainer, .two-block .story__text, .two-block .story__imgcontainer, .two-block .schedule__img {
     width: 90%;
-    margin: 3em 0 3em 0;
+    margin: 1em 0 1em 0;
   }
   #landing .iframe-container, .two-block .iframe-container {
     width: 90%;
   }
   #landing .landing__imgcontainer, .two-block .landing__imgcontainer {
-    min-height: 500px !important;
+    min-height: 45vh !important;
+    top: -60px;
   }
   #landing .landing__img, .two-block .landing__img {
-    min-height: 500px !important;
+    min-height: 45vh !important;
+    background-position: center 60% !important;
   }
 
   h1, .h1 {
