@@ -1,4 +1,4 @@
-$font-stack: 'Hanken Grotesk', sans-serif;
+$font-stack: 'Work Sans', sans-serif;
 $primary-color: #000;
 
 
@@ -18,6 +18,10 @@ body {
   height: 100px;
   margin: 2em auto;
   justify-content: space-between;
+}
+
+#story, #schedule, #directions, #faq {
+  scroll-margin: 20px;
 }
 
   .menu__logo {
@@ -99,11 +103,12 @@ body {
     min-height: 700px;
     display: flex;
     position: relative;
+    
 
     .landing__img {
       border: 3px solid black;
       border-radius: 45px;
-
+      overflow: hidden;
       min-width: 100%;
       height: 80%;
       min-height: 750px;
@@ -147,7 +152,7 @@ body {
   .story__imgcontainer{
     width: 48%;
     
-    min-height: 800px;  
+    min-height: 70vh;  
     display: flex;
     position: relative;
 
@@ -168,14 +173,10 @@ body {
     }
     
     .hitched_sticker{
-      background-image: url(../images/hitched.svg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 26%;
+    
       min-width: 350px;
       position: absolute;
-      bottom: -30px;
+      bottom: -40px;
       right: -50px;
       rotate: -15deg;
       -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
@@ -233,7 +234,17 @@ body {
 
 
 
+footer {
+  margin: 150px auto;
+  text-align: center;
+  width: 50%;
 
+  &:hover {
+    -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+  }
+}
 
 
 
@@ -645,13 +656,10 @@ sub {
       margin: 1em 0 1em 0;
     }
 
-    .iframe-container {
-      width: 90%;
-    }
-
     .landing__imgcontainer {
       min-height: 45vh !important;
       top: -60px;
+      margin-bottom: -60px !important;
     }
 
     .landing__img {
@@ -659,6 +667,22 @@ sub {
       background-position: center 60% !important;
     }
 
+  }
+
+  .hitched_sticker, .rsvp__btn {
+    right: 0px !important;
+    bottom: 0px !important;
+    min-width: 65vw !important;
+  }
+
+  .directions, .one-block, .two-block {
+    margin: 100px 0 100px 0;
+
+    .iframe-container {
+      margin-bottom: 100px;
+      width: 100%;
+      min-height: 65vh !important;
+    }
   }
 
 
@@ -693,9 +717,10 @@ sub {
     margin-bottom: 0em;
   }
 
-  .hitched_sticker, .rsvp__btn {
-    right: -30px !important;
+  footer {
+    width: 80% !important;
   }
+
 
 
 }
