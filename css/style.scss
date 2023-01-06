@@ -247,7 +247,52 @@ footer {
 }
 
 
+/** TO TOP BUTTON **/
 
+.scroll-container {
+  position: absolute;
+  top: 0;
+  right:0;
+  height: 100%;
+}
+
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.scroll-container a {
+  position: sticky;
+  top: 90vh;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 5vh;
+  height: 5vh;
+  border: 2px solid black;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: black;
+}
+
+.arrow:after {
+  content: '';
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  border-top: 4px solid white;
+  border-right: 4px solid white;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: relative;
+  margin: 35%;
+  top: 5%;
+  }
 
 
 
@@ -556,9 +601,10 @@ footer {
 
 
 body, .article {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 
   margin: auto;
+  position: relative;
 }
 h1, .h1 {
   font-size: 5.5vw;
