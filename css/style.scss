@@ -1,4 +1,4 @@
-$font-stack: 'Work Sans', sans-serif;
+$font-stack: 'Hanken Grotesk', sans-serif;
 $primary-color: #000;
 
 
@@ -40,6 +40,7 @@ body {
       flex-direction: row;
       flex-grow: 0.4;
       list-style: none;
+      z-index: 1;
 
       a:link, a:visited, a:active {
         text-decoration: none;
@@ -267,7 +268,6 @@ footer {
   position: sticky;
   top: 90vh;
   cursor: pointer;
-  font-size: 20px;
 }
 
 .arrow {
@@ -280,22 +280,11 @@ footer {
   background-color: black;
 }
 
-.arrow:after {
-  content: '';
-  display: inline-block;
-  width: 25%;
-  height: 25%;
-  border-top: 4px solid white;
-  border-right: 4px solid white;
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  position: relative;
-  margin: 35%;
-  top: 5%;
-  }
 
-
-
+.top {
+  width: 5vh;
+  height: 5vh;
+}
 
 
 
@@ -601,7 +590,7 @@ footer {
 
 
 body, .article {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
 
   margin: auto;
   position: relative;
@@ -609,12 +598,12 @@ body, .article {
 h1, .h1 {
   font-size: 5.5vw;
   line-height: 100%;
-  font-weight: 700;
+  font-weight: 900;
   margin-top: 0em;
   margin-bottom: 0em;
 }
 h2, .h2 {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 2.8vw;
   line-height: 100%;
   margin-top: 0em;
@@ -622,7 +611,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 2.8vw;
   line-height: 100%;
   margin-top: 0em;
@@ -630,7 +619,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 2.3vw;
   line-height: 150%;
   margin-top: 0em;
