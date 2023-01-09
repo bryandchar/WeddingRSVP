@@ -155,6 +155,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.one-block .oneblock__text a:link, .one-block .oneblock__text a:visited, .one-block .oneblock__text a:active {
+  text-decoration: none;
+  color: black;
+}
+.one-block .oneblock__text a:hover {
+  -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-lr 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
 
 .directions {
   display: flex;

@@ -197,6 +197,20 @@ body {
   justify-content: space-between;
   align-items: center;
 
+  .oneblock__text {
+
+    a:link, a:visited, a:active {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    }
+    
+  }
+
 }
 
 
