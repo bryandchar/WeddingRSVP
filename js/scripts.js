@@ -1,5 +1,6 @@
 let slideIndex = 1;
 let timer;
+let startX;
 
 showSlides(slideIndex);
 
@@ -35,4 +36,32 @@ resetTimer();
 function resetTimer() {
 clearTimeout(timer);
 timer = setTimeout(showSlides, 5000);
+}
+
+// Swipe functionality
+document.addEventListener("touchstart", touchStart);
+document.addEventListener("touchend", touchEnd);
+
+function touchStart(event) {
+startX = event.changedTouches[0].screenX;
+}
+
+function touchEnd(event) {
+let endX = event.changedTouches[0].screenX;
+let diffX = endX - startX;
+if (diffX > 50) {
+// Swipe right, go to previous slide
+if (slideIndex == 1) {
+showSlides(slideIndex = document.getElementsByClassName("mySlides").length);
+} else {
+showSlides(slideIndex -= 1);
+}
+} else if (diffX < -50) {
+// Swipe left, go to next slide
+if (slideIndex == document.getElementsByClassName("mySlides").length) {
+showSlides(slideIndex = 1);
+} else {
+showSlides(slideIndex += 1);
+}
+}
 }
