@@ -240,6 +240,16 @@ body {
     width: 100%;
 
   }
+
+  a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: #e96659;
+    transition: 0.3s;
+  }
 }
 
 
@@ -814,6 +824,11 @@ sub {
     line-height: 150%;
     margin-top: 0em;
     margin-bottom: 0em;
+  }
+
+  a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
   }
 
   footer {

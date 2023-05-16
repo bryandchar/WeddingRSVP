@@ -187,14 +187,6 @@ body {
 .directions .directions__text {
   width: 100%;
 }
-.directions a:link, .directions a:visited, .directions a:active {
-  text-decoration: none;
-  color: black;
-}
-.directions a:hover {
-  color: #e96659;
-  transition: 0.3s;
-}
 
 footer {
   margin: 150px auto;
@@ -704,5 +696,3 @@ sub {
     width: 80% !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
